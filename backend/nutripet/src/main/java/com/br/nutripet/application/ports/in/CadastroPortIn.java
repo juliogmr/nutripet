@@ -10,4 +10,6 @@ public interface CadastroPortIn {
     Cadastro criarCadastro(Cadastro cadastro) throws Exception;
 
     List<Cadastro> listarCadastro();
+
+    Cadastro findByCadastro(Long id);
 }

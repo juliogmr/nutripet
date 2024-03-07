@@ -12,4 +12,6 @@ public interface CadastroRepository extends MongoRepository<Cadastro, Long> {
 
     Optional<Cadastro> findByCpf(String cpf);
     Optional<Cadastro> findByEmail(String email);
+
+    Optional<Cadastro> findByIdCadastro(Long id);
 }

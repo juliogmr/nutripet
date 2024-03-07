@@ -1,9 +1,6 @@
 package com.br.nutripet.application.ports.in;
 
-import com.br.nutripet.domain.entity.Cadastro;
-import com.br.nutripet.domain.entity.Loja;
-import com.br.nutripet.domain.entity.Produto;
-import com.br.nutripet.domain.entity.Veterinario;
+import com.br.nutripet.domain.entity.*;
 
 import java.util.List;
 
@@ -21,4 +18,14 @@ public interface NutriPetPortIn {
     List<Produto> listarProdutos();
 
     Loja criarLoja(Loja loja) throws Exception;
+
+    SolicitacaoOrcamento createOrcamento(SolicitacaoOrcamento solicitacaoOrcamento) throws Exception;
+
+    List<SolicitacaoOrcamento> listAll();
+
+    List<SolicitacaoOrcamento> listarTodosPorId(Long idCadastro);
+
+    List<Dieta> listarDietaPersonalizada(Long id);
+
+    Dieta createDietaPersonalizada(Dieta dieta) throws Exception;
 }

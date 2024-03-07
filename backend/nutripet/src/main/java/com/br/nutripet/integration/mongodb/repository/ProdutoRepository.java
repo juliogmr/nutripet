@@ -16,4 +16,5 @@ public interface ProdutoRepository extends MongoRepository<Produto, Long> {
     List<Produto> findByIdLoja(Long idLoja);
 
     List<Produto> findAll();
+    List<Produto> findAllByDisponibilidade_ProntaEntrega();
 }

@@ -1,10 +1,7 @@
 package com.br.nutripet.application.service;
 
 import com.br.nutripet.application.ports.in.*;
-import com.br.nutripet.domain.entity.Cadastro;
-import com.br.nutripet.domain.entity.Loja;
-import com.br.nutripet.domain.entity.Produto;
-import com.br.nutripet.domain.entity.Veterinario;
+import com.br.nutripet.domain.entity.*;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
@@ -26,6 +23,8 @@ public class NutriPetUseCase implements NutriPetPortIn {
     private final ModelMapper mapper;
 
     private final VeterinarioPortIn veterinarioPortIn;
+
+    private final DietaPortIn dietaPortIn;
 
     @Override
     public Cadastro criarCadastro(Cadastro cadastro) throws Exception {
@@ -60,5 +59,30 @@ public class NutriPetUseCase implements NutriPetPortIn {
     @Override
     public Loja criarLoja(Loja loja) throws Exception {
         return lojaPortIn.criarLoja(loja);
+    }
+
+    @Override
+    public SolicitacaoOrcamento createOrcamento(SolicitacaoOrcamento solicitacaoOrcamento) throws Exception {
+        return solicitacaoOrcamentoPortIn.createOrcamento(solicitacaoOrcamento);
+    }
+
+    @Override
+    public List<SolicitacaoOrcamento> listAll() {
+        return solicitacaoOrcamentoPortIn.listAll();
+    }
+
+    @Override
+    public List<SolicitacaoOrcamento> listarTodosPorId(Long idCadastro) {
+        return solicitacaoOrcamentoPortIn.listarTodosPorId(idCadastro);
+    }
+
+    @Override
+    public List<Dieta> listarDietaPersonalizada(Long id) {
+        return dietaPortIn.listarDietaPersonalizada(id);
+    }
+
+    @Override
+    public Dieta createDietaPersonalizada(Dieta dieta) throws Exception {
+        return dietaPortIn.createDieta(dieta);
     }
 }

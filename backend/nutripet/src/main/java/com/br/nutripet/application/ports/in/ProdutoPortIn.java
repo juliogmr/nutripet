@@ -8,4 +8,6 @@ public interface ProdutoPortIn {
     Produto createProduct(Produto produto) throws Exception;
 
     List<Produto> listAll();
+
+    List<Produto> listarProdutosDisponiveis();
 }

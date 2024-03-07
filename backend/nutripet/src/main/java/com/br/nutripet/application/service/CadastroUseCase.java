@@ -2,9 +2,9 @@ package com.br.nutripet.application.service;
 
 import com.br.nutripet.application.ports.in.CadastroPortIn;
 import com.br.nutripet.domain.entity.Cadastro;
-import com.br.nutripet.domain.entity.Veterinario;
 import com.br.nutripet.integration.mongodb.repository.CadastroRepository;
 import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,6 +16,8 @@ public class CadastroUseCase implements CadastroPortIn {
     private final CadastroRepository cadastroRepository;
 
     private final SequenceGeneratorService service;
+
+    private final ModelMapper mapper;
 
     @Override
     public Cadastro criarCadastro(Cadastro cadastro) throws Exception {
@@ -32,5 +34,12 @@ public class CadastroUseCase implements CadastroPortIn {
     @Override
     public List<Cadastro> listarCadastro() {
         return cadastroRepository.findAll();
+    }
+
+    @Override
+    public Cadastro findByCadastro(Long id) {
+        return cadastroRepository.findByIdCadastro(id)
+                .map(loja -> mapper.map(loja, Cadastro.class))
+                .orElse(null);
     }
 }

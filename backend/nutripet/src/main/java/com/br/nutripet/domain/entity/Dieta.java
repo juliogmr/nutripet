@@ -8,6 +8,7 @@ import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Document(collection = "dietas")
 @AllArgsConstructor
@@ -22,6 +23,7 @@ public class Dieta {
     private Long idDieta;
     private Long idCadastro; // Associação com Cadastro
     private String descricao;
+    private List<Alimentos> alimentos;
     private LocalDate dataInicio;
     private Integer duracaoDias;
 }

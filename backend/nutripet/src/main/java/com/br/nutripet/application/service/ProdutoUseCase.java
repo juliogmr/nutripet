@@ -31,4 +31,9 @@ public class ProdutoUseCase implements ProdutoPortIn {
     public List<Produto> listAll() {
         return produtoRepository.findAll();
     }
+
+    @Override
+    public List<Produto> listarProdutosDisponiveis() {
+        return produtoRepository.findAllByDisponibilidade_ProntaEntrega();
+    }
 }
