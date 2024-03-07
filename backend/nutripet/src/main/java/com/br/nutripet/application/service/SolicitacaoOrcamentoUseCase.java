@@ -2,9 +2,7 @@ package com.br.nutripet.application.service;
 
 import com.br.nutripet.application.ports.in.CadastroPortIn;
 import com.br.nutripet.application.ports.in.SolicitacaoOrcamentoPortIn;
-import com.br.nutripet.domain.entity.Produto;
 import com.br.nutripet.domain.entity.SolicitacaoOrcamento;
-import com.br.nutripet.integration.mongodb.repository.ProdutoRepository;
 import com.br.nutripet.integration.mongodb.repository.SolicitacaoOrcamentoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -23,7 +21,7 @@ public class SolicitacaoOrcamentoUseCase implements SolicitacaoOrcamentoPortIn {
 
     @Override
     public SolicitacaoOrcamento createOrcamento(SolicitacaoOrcamento solicitacaoOrcamento) throws Exception {
-        if(cadastroPortIn.findByCadastro(solicitacaoOrcamento.getIdOrcamento()) == null){
+        if(cadastroPortIn.findByCpf(solicitacaoOrcamento.getCpf()) == null){
             throw new Exception("Cadastro não existe no sistema, orçamento não pode ser realizado");
         }
         solicitacaoOrcamento.setIdOrcamento(service.generateSequence(SolicitacaoOrcamento.SEQUENCE_NAME));

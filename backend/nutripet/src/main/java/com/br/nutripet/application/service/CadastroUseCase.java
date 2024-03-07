@@ -42,4 +42,11 @@ public class CadastroUseCase implements CadastroPortIn {
                 .map(loja -> mapper.map(loja, Cadastro.class))
                 .orElse(null);
     }
+
+    @Override
+    public Cadastro findByCpf(String cpf) {
+        return cadastroRepository.findByCpf(cpf)
+                .map(cadastro -> mapper.map(cadastro, Cadastro.class))
+                .orElse(null);
+    }
 }

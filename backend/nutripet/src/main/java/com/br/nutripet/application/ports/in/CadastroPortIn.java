@@ -12,4 +12,6 @@ public interface CadastroPortIn {
     List<Cadastro> listarCadastro();
 
     Cadastro findByCadastro(Long id);
+
+    Cadastro findByCpf(String cpf);
 }
