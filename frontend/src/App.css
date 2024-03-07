@@ -1,0 +1,40 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+li {
+  color: #bc6c54;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  background-color: #ffffff;
+  position: relative;
+  width: 320px;
+  height: 568px;
+
+  margin-top: 80px;
+  padding-top: 15px;
+
+  overflow-y: scroll;
+
+  border: 1px solid #bc6c54;
+  border-radius: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}

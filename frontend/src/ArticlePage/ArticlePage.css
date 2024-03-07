@@ -1,0 +1,44 @@
+.ArticlePage {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+
+  padding-bottom: 50px;
+}
+
+.ArticleArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin: 0px 10px 0px 10px;
+
+  overflow-y: scroll;
+}
+
+.ArticleArea h1 {
+  width: 292px;
+  height: 120px;
+
+  font-style: normal;
+  font-weight: 600;
+
+  font-size: 20px;
+
+  line-height: 24px;
+
+  color: #bc6c54;
+
+  margin-top: 50px;
+}
+
+.ArticleArea p {
+  margin: 20px 10px;
+  font-size: 14px;
+}
+
+.ArticleContent {
+  margin-top: 10px;
+}

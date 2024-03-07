@@ -1,0 +1,17 @@
+.TextBox {
+  background-color: #fee3d8;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7px;
+}
+
+.TextBox > p {
+  width: 80%;
+  font-weight: 600;
+  line-height: 15px;
+  text-align: center;
+  color: #e0a187;
+}

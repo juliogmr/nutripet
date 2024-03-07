@@ -1,0 +1,10 @@
+.DarkButton {
+  width: 104px;
+  height: 34px;
+
+  background-color: #bd6d55;
+  border-radius: 10px;
+  border: none;
+
+  color: #fee3d8;
+}
