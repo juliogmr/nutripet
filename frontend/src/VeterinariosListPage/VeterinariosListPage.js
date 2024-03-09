@@ -2,15 +2,13 @@ import React from "react";
 import "./VeterinariosListPage.css";
 import BackButton from "../Components/BackButton";
 
-import { Link } from "react-router-dom";
-
 export default function VeterinariosListPage() {
   const veterinarios = [
     {
       id: 1,
       nome: "Veterinario A",
       telefone: "11111111",
-      email: "veterinarioA@email.com",
+      email: "veterinarioA@email.comaaaaa",
     },
     {
       id: 1,
@@ -75,7 +73,7 @@ export default function VeterinariosListPage() {
         <div className="VetDados">
           <p className="VetName">{veterinario.nome}</p>
           <p>Tel: {veterinario.telefone}</p>
-          <p>Email: {veterinario.email}</p>
+          <p>Email: <a href={"mailto:" + veterinario.email}>{veterinario.email}</a></p>
         </div>
       </li>
     );
@@ -85,9 +83,7 @@ export default function VeterinariosListPage() {
     <div className="VeterinariosListPage">
       <BackButton prevPage="/main" />
       <h1>Veterinários</h1>
-      <div className="VeterinariosList">
-        <ul>{veterinariosItems}</ul>
-      </div>
+      <ul className="VeterinariosList">{veterinariosItems}</ul>
     </div>
   );
 }
