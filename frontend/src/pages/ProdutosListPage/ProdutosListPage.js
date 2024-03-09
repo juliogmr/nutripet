@@ -7,6 +7,7 @@ import { getProdutosPorLoja } from "../../services/produtos";
 export default function ProdutosListPage() {
   const { idLoja } = useParams();
   const [produtos, setProdutos] = useState([]);
+  const [carregando, setCarregando] = useState(true);
 
   const location = useLocation();
   const { loja } = location.state;
@@ -14,6 +15,7 @@ export default function ProdutosListPage() {
   useEffect(() => {
     getProdutosPorLoja(idLoja).then((produtos) => {
       setProdutos(produtos);
+      setCarregando(false);
 
       produtos.sort((a, b) => {
         return a.disponibilidade === "emFalta";
@@ -80,9 +82,9 @@ export default function ProdutosListPage() {
       <ul className="ProdutosList">
         {produtos.length > 0 ? (
           produtosItems
-        ) : (
-          <li className="ProdutoEntry Error">Nenhum produto encontrado</li>
-        )}
+        ) : carregando ? <li>Carregando dados...</li>
+            : <li className="ProdutoEntry Error">Nenhum produto encontrado</li>
+        }
       </ul>
     </div>
   );

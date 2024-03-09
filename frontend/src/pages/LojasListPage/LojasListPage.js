@@ -6,10 +6,12 @@ import { getLojas } from "../../services/lojas";
 
 export default function LojasListPage() {
   const [lojas, setLojas] = useState([]);
+  const [carregando, setCarregando] = useState(true);
 
   useEffect(() => {
     getLojas().then((lojas) => {
       setLojas(lojas);
+      setCarregando(false);
     });
   }, []);
 
@@ -39,9 +41,9 @@ export default function LojasListPage() {
       <ul className="LojasList">
         {lojas.length > 0 ? (
           lojasItems
-        ) : (
-          <li className="ProdutoEntry Error">Nenhuma loja encontrada</li>
-        )}
+        ) : carregando ? <li>Carregando dados...</li>
+            : <li className="ProdutoEntry Error">Nenhuma loja encontrada</li>
+        }
       </ul>
     </div>
   );

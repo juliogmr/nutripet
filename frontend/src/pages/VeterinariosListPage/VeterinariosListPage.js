@@ -5,10 +5,12 @@ import getVeterinarios from "../../services/veterinarios";
 
 export default function VeterinariosListPage() {
   const [veterinarios, setVeterinarios] = useState([]);
+  const [carregando, setCarregando] = useState(true);
 
   useEffect(() => {
     getVeterinarios().then((vets) => {
       setVeterinarios(vets);
+      setCarregando(false);
     });
   }, []);
   
@@ -33,7 +35,8 @@ export default function VeterinariosListPage() {
       <h1>Veterinários</h1>
       <ul className="VeterinariosList">{
         veterinarios.length > 0 ? veterinariosItems
-          : <li className="VeterinarioEntry Error">Nenhum veterinário encontrado</li>
+          : carregando? <li>Carregando dados...</li> 
+            : <li className="VeterinarioEntry Error">Nenhum veterinário encontrado</li>
       }</ul>
     </div>
   );
