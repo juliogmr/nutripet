@@ -13,9 +13,18 @@
 
 .SearchBar > input {
   border: none;
+  width: 100%;
+}
+
+.SearchBar > input:focus {
+  outline: none;
 }
 
 .SearchButton {
   border: none;
   background-color: #ffffff;
+}
+
+.SearchButton:hover {
+  cursor: pointer;
 }

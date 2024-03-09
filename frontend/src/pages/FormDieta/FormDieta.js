@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./FormDieta.css";
 import InputBox from "../Components/InputBox";
 import BackButton from "../Components/BackButton";
@@ -10,7 +11,7 @@ export default function FormDieta() {
 
   return (
     <div className="FormDieta">
-      <BackButton prevPage="/main" />
+      <BackButton prevPage="/" />
       <h1>{headerText}</h1>
       <form>
         <div className="FormArea">
@@ -110,7 +111,9 @@ export default function FormDieta() {
             />
           </div>
         </div>
-        <DarkButton type="submit" text="Enviar" />
+        <Link to="/form_enviado">
+          <DarkButton type="submit" text="Enviar" />
+        </Link>
       </form>
     </div>
   );

@@ -8,3 +8,7 @@
 
   color: #fee3d8;
 }
+
+.DarkButton:hover {
+  cursor: pointer;
+}

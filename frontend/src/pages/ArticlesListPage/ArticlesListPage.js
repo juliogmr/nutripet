@@ -40,7 +40,7 @@ export default function ArticlesListPage() {
 
   return (
     <div className="ArticlesListPage">
-      <BackButton prevPage="/main" />
+      <BackButton prevPage="/" />
       <h1>Blog</h1>
       <div className="ArticlesList">
         <ul>{articleItems}</ul>

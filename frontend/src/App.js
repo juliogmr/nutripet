@@ -1,11 +1,13 @@
 import "./App.css";
-import LoginPage from "./LoginPage/LoginPage";
-import MainPage from "./MainPage/MainPage";
-import FormDieta from "./FormDieta/FormDieta";
-import ArticlesListPage from "./ArticlesListPage/ArticlesListPage";
-import ArticlePage from "./ArticlePage/ArticlePage";
-import VeterinariosListPage from "./VeterinariosListPage/VeterinariosListPage";
-import ProdutosListPage from "./ProdutosListPage/ProdutosListPage";
+import LoginPage from "./pages/LoginPage/LoginPage";
+import MainPage from "./pages/MainPage/MainPage";
+import FormDieta from "./pages/FormDieta/FormDieta";
+import FormEnviado from "./pages/FormDieta/FormEnviado";
+import ArticlesListPage from "./pages/ArticlesListPage/ArticlesListPage";
+import ArticlePage from "./pages/ArticlePage/ArticlePage";
+import VeterinariosListPage from "./pages/VeterinariosListPage/VeterinariosListPage";
+import ProdutosListPage from "./pages/ProdutosListPage/ProdutosListPage";
+
 
 import { Routes, Route } from "react-router-dom";
 
@@ -14,8 +16,9 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/main" element={<MainPage />} />
-        <Route path="form_dieta" element={<FormDieta />} />
+        <Route path="/" element={<MainPage />} />
+        <Route path="/form_dieta" element={<FormDieta />} />
+        <Route path="/form_enviado" element={<FormEnviado />} />
         <Route path="/dicas" element={<ArticlesListPage />} />
         <Route path="/dicas/:articleId" element={<ArticlePage />} />
         <Route path="/veterinarios" element={<VeterinariosListPage />} />
