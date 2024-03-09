@@ -12,6 +12,8 @@ export default function MainPage() {
   const secondBanner =
     "Adquira o clube de vantagens com cupons de desconto exclusivos";
 
+
+
   return (
     <div className="MainPage">
       <SearchBar />
@@ -22,7 +24,7 @@ export default function MainPage() {
             text="Dieta Personalizada"
           />
         </Link>
-        <Link to="/main">
+        <Link to="/veterinarios">
           <SectionButton image="../icone_veterinario.png" text="Veterinário" />
         </Link>
         <Link to="/main">

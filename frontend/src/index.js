@@ -6,11 +6,15 @@ import reportWebVitals from "./reportWebVitals";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 
+
 const root = createRoot(document.getElementById("root"));
+
+const url = process.env.REACT_APP_BACKEND_URL;
 
 root.render(
   <BrowserRouter>
     <h1>NutriPet POC</h1>
+    <h2>{url}</h2>
     <App />
   </BrowserRouter>
 );

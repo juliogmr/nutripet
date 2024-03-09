@@ -1,0 +1,28 @@
+.VeterinariosListPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.VeterinarioEntry {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.VetDados {
+  display: flex;
+  flex-direction: column;
+}
+
+.VetDados p {
+  margin: 1px;
+}
+
+.VetName {
+  font-weight: bold;
+}
+
+.VetIcon {
+  width: 50px;
+  height: 50px;
+}

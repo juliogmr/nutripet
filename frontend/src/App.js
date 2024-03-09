@@ -4,6 +4,7 @@ import MainPage from "./MainPage/MainPage";
 import FormDieta from "./FormDieta/FormDieta";
 import ArticlesListPage from "./ArticlesListPage/ArticlesListPage";
 import ArticlePage from "./ArticlePage/ArticlePage";
+import VeterinariosListPage from "./VeterinariosListPage/VeterinariosListPage";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="form_dieta" element={<FormDieta />} />
         <Route path="/dicas" element={<ArticlesListPage />} />
         <Route path="/dicas/:articleId" element={<ArticlePage />} />
+        <Route path="/veterinarios" element={<VeterinariosListPage />} />
       </Routes>
     </div>
   );
