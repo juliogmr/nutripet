@@ -5,6 +5,7 @@ import FormDieta from "./FormDieta/FormDieta";
 import ArticlesListPage from "./ArticlesListPage/ArticlesListPage";
 import ArticlePage from "./ArticlePage/ArticlePage";
 import VeterinariosListPage from "./VeterinariosListPage/VeterinariosListPage";
+import ProdutosListPage from "./ProdutosListPage/ProdutosListPage";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/dicas" element={<ArticlesListPage />} />
         <Route path="/dicas/:articleId" element={<ArticlePage />} />
         <Route path="/veterinarios" element={<VeterinariosListPage />} />
+        <Route path="/produtos" element={<ProdutosListPage />} />
       </Routes>
     </div>
   );

@@ -27,7 +27,7 @@ export default function MainPage() {
         <Link to="/veterinarios">
           <SectionButton image="../icone_veterinario.png" text="Veterinário" />
         </Link>
-        <Link to="/main">
+        <Link to="/produtos">
           <SectionButton
             image="../icone_pronta_entrega.png"
             text="Pronta Entrega"
