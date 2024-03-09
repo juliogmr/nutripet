@@ -19,11 +19,13 @@ public class NutripetController {
 
     private final ProdutoPortIn produtoPortIn;
 
+    @CrossOrigin
     @GetMapping("/produtos/listarProdutosDisponiveis")
     ResponseEntity<List<Produto>> listarProdutosDisponiveis() {
         return new ResponseEntity<>(produtoPortIn.listarProdutosDisponiveis(), HttpStatus.OK);
     }
 
+    @CrossOrigin
     @GetMapping("/veterinarios/listarVeterinarios")
     ResponseEntity<List<Veterinario>> listarVeterinarios() {
         return new ResponseEntity<>(nutriPetPortIn.listarVeterinarios(), HttpStatus.OK);
@@ -44,6 +46,7 @@ public class NutripetController {
         return new ResponseEntity<>(nutriPetPortIn.criarLoja(loja), HttpStatus.CREATED);
     }
 
+    @CrossOrigin
     @GetMapping("/produtos/listarProdutos")
     ResponseEntity<List<Produto>> listarProdutos() {
         return new ResponseEntity<>(nutriPetPortIn.listarProdutos(), HttpStatus.OK);
