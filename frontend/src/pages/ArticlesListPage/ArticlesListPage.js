@@ -30,7 +30,7 @@ export default function ArticlesListPage() {
 
   const articleItems = articlesList.map((article) => {
     return (
-      <li>
+      <li key={article.id}>
         <Link to={article.id}>
           <TextBox text={article.title} />
         </Link>

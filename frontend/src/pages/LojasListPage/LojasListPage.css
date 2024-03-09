@@ -1,32 +1,18 @@
-.ProdutosListPage {
+.LojasListPage {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 
-.LojaInfo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.LojaInfo p {
-  font-size: 10px;
-  margin: 0px 50px 5px;
-
-  text-align: left;
-}
-
-.ProdutosList {
+.LojasList {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.ProdutoEntry {
+.LojaEntry {
   display: flex;
   flex-direction: row;
 
@@ -44,35 +30,31 @@
   border-radius: 10px;
 }
 
-.EmFalta {
-  background-color: rgba(85, 85, 85, 0.205);
-  opacity: 0.6;
-}
-
-.EmFalta p {
-  color: #856b63;
-}
-
 .Error {
   color: rgb(255, 108, 108);
 }
 
-.ProdutoDados {
+.LojaDados {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
-.ProdutoDados p {
+.LojaDados p {
   margin: 1px;
 }
 
-.ProdutoNome {
+.LojaNome {
   font-weight: bold;
 }
 
-.ProdutoIcon {
+.LojaEndereco {
+  display: flex;
+  flex-direction: column;
+}
+
+.LojaIcon {
   width: 50px;
   height: 50px;
 }

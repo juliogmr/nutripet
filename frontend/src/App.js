@@ -10,6 +10,7 @@ import ProdutosListPage from "./pages/ProdutosListPage/ProdutosListPage";
 
 
 import { Routes, Route } from "react-router-dom";
+import LojasListPage from "./pages/LojasListPage/LojasListPage";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
         <Route path="/dicas" element={<ArticlesListPage />} />
         <Route path="/dicas/:articleId" element={<ArticlePage />} />
         <Route path="/veterinarios" element={<VeterinariosListPage />} />
-        <Route path="/produtos" element={<ProdutosListPage />} />
+        <Route path="/lojas" element={<LojasListPage />} />
+        <Route path="/lojas/:idLoja" element={<ProdutosListPage />} />
       </Routes>
     </div>
   );
