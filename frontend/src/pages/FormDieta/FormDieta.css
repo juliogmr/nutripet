@@ -1,0 +1,43 @@
+.FormDieta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.FormDieta form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+.FormArea {
+  display: flex;
+
+  flex-direction: column;
+  width: 289px;
+}
+
+.FormRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.FormDieta h1 {
+  font-family: "Itim";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #bc6c54;
+
+  margin: 10px 15px;
+}
+
+.FormArea InputBox {
+  color: #e0a187;
+}

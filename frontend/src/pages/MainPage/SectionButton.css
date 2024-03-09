@@ -1,0 +1,26 @@
+.SectionButton {
+  background-color: #b6b9ae;
+  width: 138px;
+  height: 128px;
+
+  border-radius: 10px;
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  padding-top: 20px;
+}
+
+.SectionButton:hover {
+  background-color: #888a82;
+}
+
+.SectionLabel {
+  font-weight: 600;
+  line-height: 15px;
+  color: #ffffff;
+  font-size: 12px;
+}

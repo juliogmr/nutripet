@@ -1,0 +1,24 @@
+.MainPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.SectionButtonsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 30px 7px;
+}
+
+.SectionButtonsContainer .SectionButton {
+  margin: 7px;
+}
+
+.SectionButton:hover {
+  cursor: pointer;
+}

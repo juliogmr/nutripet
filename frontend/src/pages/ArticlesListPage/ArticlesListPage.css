@@ -1,0 +1,25 @@
+.ArticlesListPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ArticlesListPage h1 {
+  align-self: flex-start;
+  padding-left: 15px;
+}
+
+.ArticlesList {
+  overflow-y: scroll;
+}
+
+.ArticlesList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ArticlesList li {
+  margin: 20px 10px;
+}

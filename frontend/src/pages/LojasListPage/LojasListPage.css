@@ -1,0 +1,60 @@
+.LojasListPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.LojasList {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.LojaEntry {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+  margin-right: 10px;
+
+  padding: 10px 5px;
+  
+  width: 250px;
+  overflow-x: scroll;
+
+  border: 1px solid #bc6c54;
+  border-radius: 10px;
+}
+
+.Error {
+  color: rgb(255, 108, 108);
+}
+
+.LojaDados {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.LojaDados p {
+  margin: 1px;
+}
+
+.LojaNome {
+  font-weight: bold;
+}
+
+.LojaEndereco {
+  display: flex;
+  flex-direction: column;
+}
+
+.LojaIcon {
+  width: 50px;
+  height: 50px;
+}

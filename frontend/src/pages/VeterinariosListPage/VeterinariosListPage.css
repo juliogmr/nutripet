@@ -1,0 +1,50 @@
+.VeterinariosListPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.VeterinariosList {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.VeterinarioEntry {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-right: 10px;
+
+  padding: 10px 5px;
+  
+  width: 250px;
+  overflow-x: scroll;
+
+  border: 1px solid #bc6c54;
+  border-radius: 10px;
+}
+
+.Error {
+  color: rgb(255, 108, 108);
+}
+
+.VetDados {
+  display: flex;
+  flex-direction: column;
+}
+
+.VetDados p {
+  margin: 1px;
+}
+
+.VetName {
+  font-weight: bold;
+}
+
+.VetIcon {
+  width: 50px;
+  height: 50px;
+}

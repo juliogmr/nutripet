@@ -1,0 +1,32 @@
+.InputBox {
+  border-radius: 10px;
+  height: 34px;
+
+  border: none;
+
+  padding-left: 10px;
+  
+  margin-bottom: 16px;
+}
+
+.Dark {
+  background-color: #F1BFA8;
+  color: #BC6C54;
+  font-weight: bold;
+}
+
+.Light {
+  background-color: #FEE3D8;
+  font-weight: bold;
+  color: #E0A187;
+}
+
+.Large {
+  width: 100%;
+}
+
+.Small {
+  width: 43%;
+
+  font-size: 10px;
+}
