@@ -10,4 +10,6 @@ public interface ProdutoPortIn {
     List<Produto> listAll();
 
     List<Produto> listarProdutosDisponiveis();
+
+    List<Produto> listarProdutosPorLoja(Long idLoja);
 }

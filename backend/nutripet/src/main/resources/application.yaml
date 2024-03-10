@@ -4,7 +4,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://root:example@localhost:27017/nutripetdb?authSource=admin
+      uri: mongodb://root:example@mongodb:27017/nutripetdb?authSource=admin
 #      host: localhost
 #      port: 27017
 #      authentication-database: nutripetdb

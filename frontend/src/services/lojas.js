@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export function getLojas() {
-  const endpoint = process.env.REACT_APP_BACKEND_URL + "/lojas/listarLojas";
+  const endpoint = "http://localhost:8080/nutripet/lojas/listarLojas";
 
   return axios.get(endpoint)
     .then((res) => {

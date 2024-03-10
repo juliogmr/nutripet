@@ -3,7 +3,6 @@ package com.br.nutripet.application.service;
 import com.br.nutripet.application.ports.in.*;
 import com.br.nutripet.domain.entity.*;
 import lombok.RequiredArgsConstructor;
-import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,8 +18,6 @@ public class NutriPetUseCase implements NutriPetPortIn {
     private final ProdutoPortIn produtoPortIn;
 
     private final SolicitacaoOrcamentoPortIn solicitacaoOrcamentoPortIn;
-
-    private final ModelMapper mapper;
 
     private final VeterinarioPortIn veterinarioPortIn;
 

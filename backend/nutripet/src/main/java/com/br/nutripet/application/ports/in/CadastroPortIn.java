@@ -1,7 +1,6 @@
 package com.br.nutripet.application.ports.in;
 
 import com.br.nutripet.domain.entity.Cadastro;
-import com.br.nutripet.domain.entity.Veterinario;
 
 import java.util.List;
 

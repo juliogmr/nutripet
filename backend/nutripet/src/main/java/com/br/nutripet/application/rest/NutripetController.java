@@ -1,5 +1,6 @@
 package com.br.nutripet.application.rest;
 
+import com.br.nutripet.application.ports.in.LojaPortIn;
 import com.br.nutripet.application.ports.in.NutriPetPortIn;
 import com.br.nutripet.application.ports.in.ProdutoPortIn;
 import com.br.nutripet.domain.entity.*;
@@ -18,6 +19,8 @@ public class NutripetController {
     private final NutriPetPortIn nutriPetPortIn;
 
     private final ProdutoPortIn produtoPortIn;
+
+    private final LojaPortIn lojaPortIn;
 
     @CrossOrigin
     @GetMapping("/produtos/listarProdutosDisponiveis")
@@ -47,10 +50,23 @@ public class NutripetController {
     }
 
     @CrossOrigin
+    @GetMapping("/lojas/listarLojas")
+    ResponseEntity<List<Loja>> listarLojas() {
+      return new ResponseEntity<>(lojaPortIn.listarLojas(), HttpStatus.OK);
+    }
+
+    @CrossOrigin
     @GetMapping("/produtos/listarProdutos")
     ResponseEntity<List<Produto>> listarProdutos() {
         return new ResponseEntity<>(nutriPetPortIn.listarProdutos(), HttpStatus.OK);
     }
+
+    @CrossOrigin
+    @GetMapping("/lojas/{idLoja}/listarProdutos")
+    ResponseEntity<List<Produto>> listarProdutosPorLoja(@PathVariable Long idLoja) {
+      return new ResponseEntity<>(produtoPortIn.listarProdutosPorLoja(idLoja), HttpStatus.OK);
+    }
+
 
     @GetMapping("/dieta/listarDietasPersonalizadas/{id}")
     ResponseEntity<List<Dieta>> listarDietaPersonalizada(@PathVariable("id") Long idCadastro) {

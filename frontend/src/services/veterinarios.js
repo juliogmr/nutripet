@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default function getVeterinarios() {
-    const endpoint = process.env.REACT_APP_BACKEND_URL + "/veterinarios/listarVeterinarios";
+    const endpoint = "http://localhost:8080/nutripet/veterinarios/listarVeterinarios";
 
     return axios.get(endpoint)
       .then((res) => {

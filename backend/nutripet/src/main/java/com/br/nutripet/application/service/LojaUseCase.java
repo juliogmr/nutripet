@@ -2,9 +2,11 @@ package com.br.nutripet.application.service;
 
 import com.br.nutripet.application.ports.in.LojaPortIn;
 import com.br.nutripet.domain.entity.Loja;
-import com.br.nutripet.domain.entity.Veterinario;
 import com.br.nutripet.integration.mongodb.repository.LojaRepository;
 import lombok.RequiredArgsConstructor;
+
+import java.util.List;
+
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
@@ -30,5 +32,10 @@ public class LojaUseCase implements LojaPortIn {
         }
         loja.setIdLoja(service.generateSequence(Loja.SEQUENCE_NAME));
         return lojaRepository.save(loja);
+    }
+
+    @Override
+    public List<Loja> listarLojas() {
+      return lojaRepository.findAll();
     }
 }

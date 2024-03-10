@@ -2,7 +2,6 @@ package com.br.nutripet.application.service;
 
 import com.br.nutripet.application.ports.in.ProdutoPortIn;
 import com.br.nutripet.domain.entity.Produto;
-import com.br.nutripet.domain.entity.Veterinario;
 import com.br.nutripet.integration.mongodb.repository.ProdutoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -35,5 +34,10 @@ public class ProdutoUseCase implements ProdutoPortIn {
     @Override
     public List<Produto> listarProdutosDisponiveis() {
         return produtoRepository.findAllByDisponibilidade_ProntaEntrega();
+    }
+
+    @Override
+    public List<Produto> listarProdutosPorLoja(Long idLoja) {
+      return produtoRepository.findByIdLoja(idLoja);
     }
 }

@@ -1,6 +1,5 @@
 package com.br.nutripet.integration.mongodb.repository;
 import com.br.nutripet.domain.entity.Disponibilidade;
-import com.br.nutripet.domain.entity.Loja;
 import com.br.nutripet.domain.entity.Produto;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;

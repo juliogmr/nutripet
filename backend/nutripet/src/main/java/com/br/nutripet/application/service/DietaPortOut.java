@@ -3,9 +3,7 @@ package com.br.nutripet.application.service;
 import com.br.nutripet.application.ports.in.CadastroPortIn;
 import com.br.nutripet.application.ports.in.DietaPortIn;
 import com.br.nutripet.domain.entity.Dieta;
-import com.br.nutripet.domain.entity.SolicitacaoOrcamento;
 import com.br.nutripet.integration.mongodb.repository.DietaRepository;
-import com.br.nutripet.integration.mongodb.repository.SolicitacaoOrcamentoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export function getProdutos() {
-    const endpoint = process.env.REACT_APP_BACKEND_URL + "/produtos/listarProdutos";
+    const endpoint = "http://localhost:8080/nutripet/produtos/listarProdutos";
 
     return axios.get(endpoint)
       .then((res) => {
@@ -13,7 +13,7 @@ export function getProdutos() {
 }
 
 export function getProdutosPorLoja(idLoja) {
-  const endpoint = process.env.REACT_APP_BACKEND_URL + "/lojas/" + idLoja + "/listarProdutos";
+  const endpoint =  "http://localhost:8080/nutripet/lojas/" + idLoja + "/listarProdutos";
 
   return axios.get(endpoint)
     .then((res) => {

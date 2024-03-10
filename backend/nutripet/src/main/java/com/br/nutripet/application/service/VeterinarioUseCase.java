@@ -1,7 +1,6 @@
 package com.br.nutripet.application.service;
 
 import com.br.nutripet.application.ports.in.VeterinarioPortIn;
-import com.br.nutripet.domain.entity.Cadastro;
 import com.br.nutripet.domain.entity.Veterinario;
 import com.br.nutripet.integration.mongodb.repository.VeterinarioRepository;
 import lombok.RequiredArgsConstructor;
