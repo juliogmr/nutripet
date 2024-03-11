@@ -1,0 +1,128 @@
+[{
+  "_id": 1,
+  "nome": "Vacina Gripe Animal",
+  "preco": "12",
+  "idLoja": 1,
+  "disponibilidade": "prontaEntrega",
+  "_class": "com.br.nutripet.domain.entity.Produto"
+},
+{
+  "_id": 2,
+  "nome": "Vacina Gripe Animal",
+  "preco": "12",
+  "idLoja": 1,
+  "disponibilidade": "prontaEntrega",
+  "_class": "com.br.nutripet.domain.entity.Produto"
+},
+{
+  "_id": 3,
+  "nome": "Vacina Gripe Animal",
+  "preco": "12",
+  "idLoja": 1,
+  "disponibilidade": "prontaEntrega",
+  "_class": "com.br.nutripet.domain.entity.Produto"
+},
+{
+  "_id": 4,
+  "nome": "Vacina Gripe Animal",
+  "preco": "12",
+  "idLoja": 1,
+  "disponibilidade": "prontaEntrega",
+  "_class": "com.br.nutripet.domain.entity.Produto"
+},
+{
+  "_id": 5,
+  "nome": "Vacina Gripe Animal",
+  "preco": "12",
+  "idLoja": 1,
+  "disponibilidade": "prontaEntrega",
+  "_class": "com.br.nutripet.domain.entity.Produto"
+},
+{
+  "_id": 6,
+  "nome": "Vacina Gripe Animal",
+  "preco": "12",
+  "idLoja": 2,
+  "disponibilidade": "prontaEntrega",
+  "_class": "com.br.nutripet.domain.entity.Produto"
+},
+{
+  "_id": 7,
+  "nome": "Sache Gato",
+  "preco": "3",
+  "idLoja": 2,
+  "disponibilidade": "prontaEntrega",
+  "_class": "com.br.nutripet.domain.entity.Produto"
+},
+{
+  "_id": 8,
+  "nome": "Sache Gato",
+  "preco": "3",
+  "idLoja": 2,
+  "disponibilidade": "prontaEntrega",
+  "_class": "com.br.nutripet.domain.entity.Produto"
+},
+{
+  "_id": 9,
+  "nome": "Sache Gato",
+  "preco": "3",
+  "idLoja": 2,
+  "disponibilidade": "prontaEntrega",
+  "_class": "com.br.nutripet.domain.entity.Produto"
+},
+{
+  "_id": 10,
+  "nome": "Sache Gato",
+  "preco": "3",
+  "idLoja": 2,
+  "disponibilidade": "prontaEntrega",
+  "_class": "com.br.nutripet.domain.entity.Produto"
+},
+{
+  "_id": 11,
+  "nome": "Sache Gato",
+  "preco": "3",
+  "idLoja": 2,
+  "disponibilidade": "prontaEntrega",
+  "_class": "com.br.nutripet.domain.entity.Produto"
+},
+{
+  "_id": 12,
+  "nome": "Shampoo Animal Anti-Pulgas e Carrapatos",
+  "preco": "31",
+  "idLoja": 2,
+  "disponibilidade": "prontaEntrega",
+  "_class": "com.br.nutripet.domain.entity.Produto"
+},
+{
+  "_id": 13,
+  "nome": "Shampoo Animal Anti-Pulgas e Carrapatos",
+  "preco": "31",
+  "idLoja": 2,
+  "disponibilidade": "prontaEntrega",
+  "_class": "com.br.nutripet.domain.entity.Produto"
+},
+{
+  "_id": 14,
+  "nome": "Shampoo Animal Anti-Pulgas e Carrapatos",
+  "preco": "31",
+  "idLoja": 2,
+  "disponibilidade": "prontaEntrega",
+  "_class": "com.br.nutripet.domain.entity.Produto"
+},
+{
+  "_id": 15,
+  "nome": "Shampoo Animal Anti-Pulgas e Carrapatos",
+  "preco": "31",
+  "idLoja": 2,
+  "disponibilidade": "prontaEntrega",
+  "_class": "com.br.nutripet.domain.entity.Produto"
+},
+{
+  "_id": 16,
+  "nome": "Shampoo Animal Anti-Pulgas e Carrapatos",
+  "preco": "31",
+  "idLoja": 2,
+  "disponibilidade": "prontaEntrega",
+  "_class": "com.br.nutripet.domain.entity.Produto"
+}]

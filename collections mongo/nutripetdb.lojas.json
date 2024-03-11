@@ -1,0 +1,18 @@
+[{
+  "_id": 1,
+  "email": "lojamaria@gmail.com",
+  "nome": "Maria - Produtos de Banho",
+  "cidade": "Porto Alegre",
+  "telefone": "555199999999",
+  "endereco": "20",
+  "_class": "com.br.nutripet.domain.entity.Loja"
+},
+{
+  "_id": 2,
+  "email": "lojamarco@gmail.com",
+  "nome": "Marco - Produtos para Seu Pet",
+  "cidade": "Porto Alegre",
+  "telefone": "555199999999",
+  "endereco": "20",
+  "_class": "com.br.nutripet.domain.entity.Loja"
+}]

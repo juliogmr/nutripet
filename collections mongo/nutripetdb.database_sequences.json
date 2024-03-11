@@ -1,0 +1,16 @@
+[{
+  "_id": "veterinarios_sequence",
+  "seq": 4
+},
+{
+  "_id": "lojas_sequence",
+  "seq": 2
+},
+{
+  "_id": "produtos_sequence",
+  "seq": 16
+},
+{
+  "_id": "users_sequence",
+  "seq": 1
+}]
