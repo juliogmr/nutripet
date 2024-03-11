@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "282c5fc7-8793-4980-b620-19ef89a12727",
+		"name": "nutripet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23922043"
+	},
+	"item": [
+		{
+			"name": "createCadastro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 123",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"lucas@gmail.com\",\r\n    \"senha\": \"123\",\r\n    \"cpf\": \"12345678\",\r\n    \"idade\": 20,\r\n    \"telefone\": \"555199999999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/nutripet/criarCadastro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nutripet",
+						"criarCadastro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createVeterinario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 123",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Louisie Antunes\",\r\n    \"especialidade\": \"Especialista em Dermatologia animal \",\r\n    \"telefone\": \"555199999999\",\r\n    \"email\": \"louisie@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/nutripet/criarVeterinario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nutripet",
+						"criarVeterinario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createProdutos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 123",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Shampoo Animal Anti-Pulgas e Carrapatos\",\r\n    \"preco\": \"31\",\r\n    \"idLoja\": \"2\",\r\n    \"disponibilidade\": \"prontaEntrega\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/nutripet/produtos/criarProdutos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nutripet",
+						"produtos",
+						"criarProdutos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createLoja",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 123",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"lojamarco@gmail.com\",\r\n    \"nome\": \"Marco - Produtos para Seu Pet\",\r\n    \"cidade\": \"Porto Alegre\",\r\n    \"telefone\": \"555199999999\",\r\n    \"endereco\": \"20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/nutripet/lojas/criarLoja",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nutripet",
+						"lojas",
+						"criarLoja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarCadastro",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 123",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/nutripet/listarCadastros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nutripet",
+						"listarCadastros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarVeterinarios",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 123",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/nutripet/veterinarios/listarVeterinarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nutripet",
+						"veterinarios",
+						"listarVeterinarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarProdutos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 123",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/nutripet/produtos/listarProdutos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nutripet",
+						"produtos",
+						"listarProdutos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
