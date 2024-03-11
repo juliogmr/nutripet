@@ -6,9 +6,7 @@
 
 - Júlio Gabriel Moreira Rocha
 - Laura Cristina Angioletto Martins
-- Morgana Conceição da Cruz Gomes
 - Pedro Favoreto Gaya
-- Rafael Silva Vieira
 
 ## Como instalar/executar
 
@@ -18,11 +16,15 @@
 
     > mvn clean package
 
-    > docker-compose up --build
+    > abra o terminal na pasta onde tenha o arquivo docker-compose
 
-    Acesse a aplicação em um navegador na URL: http://localhost:3000/
+    > execute este comando no terminal: docker-compose up --build
 
+    > Recomendamos o download do programa postman, para utilizar as collections inseridas aqui com o nome nutripet.postman_collection.json
 
+    > Com o postman baixado e as collections feitas, popular o banco, com as creations conforme a imaginaçao porém, seguindo a ordem: Veterinario, Cadastro, Loja e Produto.
+
+    Acesse a aplicação em um navegador na URL: http://localhost:3000/ e divirta-se :)
 
 ## Tecnologias Utilizadas
 
