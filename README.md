@@ -8,6 +8,8 @@
 - Laura Cristina Angioletto Martins
 - Pedro Favoreto Gaya
 
+## Arquivo Word presente no github.
+
 ## Como instalar/executar
 
     Clone o repositório.
@@ -39,6 +41,7 @@
 ## Tecnologias Utilizadas
 
 - Maven
+- Java
 - SpringBoot
 - MongoDB
 - React.JS
